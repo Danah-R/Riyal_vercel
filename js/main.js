@@ -40,8 +40,8 @@
   safe(function () {
     var toggle = $('[data-lang-toggle]');
     var TITLES = {
-      en: 'Riyal ريال — Know where your money goes',
-      ar: 'ريال — اعرف إلى أين يذهب مالك'
+      en: 'Riyal ريال | Know where your money goes',
+      ar: 'ريال | اعرف إلى أين يذهب مالك'
     };
 
     function setLang(lang) {

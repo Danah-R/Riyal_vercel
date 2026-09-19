@@ -13,10 +13,6 @@
    ========================================================================== */
 window.RIYAL_LINKS = {
   app:            "",   // ← "Try Riyal": web app / TestFlight / Play Store URL
-  demo:           "",   // ← "Watch the demo": YouTube / Loom / Drive URL
-
-  github:         "https://github.com/Riyal-project/Riyal",
-  readme:         "https://github.com/Riyal-project/Riyal#readme",
 
   linkedinDanah:  "https://www.linkedin.com/in/danah-altamimi-b2912141a",
   linkedinFulwah: "https://www.linkedin.com/in/fulwah-alyahya-7037a9293"

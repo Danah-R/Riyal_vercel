@@ -194,6 +194,14 @@ html[lang="ar"] h2, html[lang="ar"] h3 { line-height: 1.4; }
 }
 [dir="rtl"] .progress { transform-origin: right; }
 @media (min-width: 900px) { .nav__links { display: flex; } }
+@media (max-width: 899px) {
+  :root { --nav-h: 112px; }
+  .nav__in { height: auto; min-height: var(--nav-h); flex-wrap: wrap; gap: 0 16px; padding-block-start: 10px; }
+  .nav__in > nav { order: 3; flex-basis: 100%; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  .nav__in > nav::-webkit-scrollbar { display: none; }
+  .nav__links { display: flex; width: max-content; min-width: 100%; justify-content: space-between; padding-block: 8px; }
+  .nav__links a { white-space: nowrap; padding: 10px 12px; font-size: 0.85rem; }
+}
 
 /* ---------- Section scaffolding ---------- */
 .section { padding-block: var(--sec-y); }
@@ -423,14 +431,14 @@ html[lang="ar"] .panel__label { font-size: 0.9rem; }
 .phones > li { flex: 0 0 min(60%, 236px); scroll-snap-align: center; }
 .phone { text-align: center; }
 .phone__frame {
-  position: relative; aspect-ratio: 9 / 19; padding: 8px;
+  position: relative; aspect-ratio: 589 / 1280; padding: 6px;
   border-radius: 34px; background: var(--bg-elev); border: 1px solid var(--line-strong);
   transition: border-color 0.3s, transform 0.3s var(--ease);
 }
 @media (hover: hover) { .phone:hover .phone__frame { border-color: rgba(203, 169, 96, 0.5); transform: translateY(-4px); } }
 .phone__notch { position: absolute; inset-block-start: 15px; inset-inline: 0; margin-inline: auto; width: 26%; height: 9px; border-radius: 999px; background: #000; z-index: 3; }
 .phone__screen { position: relative; height: 100%; border-radius: 27px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); }
-.phone__screen img { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; object-fit: cover; }
+.phone__screen img { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; object-fit: contain; background: var(--bg); }
 .phone__ph {
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
   outline: 1px dashed rgba(247, 241, 233, 0.13); outline-offset: -14px; border-radius: 27px;
@@ -439,7 +447,7 @@ html[lang="ar"] .panel__label { font-size: 0.9rem; }
 .phone__ph .coin { --coin-face: var(--surface); width: 44px; height: 44px; opacity: 0.85; }
 .phone figcaption { margin-block-start: 14px; color: var(--text-2); font: 500 0.95rem/1.3 var(--f-body); }
 @media (min-width: 720px) {
-  .phones { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(16px, 2.6vw, 32px); overflow: visible; margin-inline: 0; padding-inline: 0; }
+  .phones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 36px); overflow: visible; margin-inline: 0; padding-inline: 0; }
   .phones > li { flex: none; }
 }
 
