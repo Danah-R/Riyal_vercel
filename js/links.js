@@ -12,7 +12,7 @@
         data-link="…" to your new key (and the label text).
    ========================================================================== */
 window.RIYAL_LINKS = {
-  app:            "",   // ← "Try Riyal": web app / TestFlight / Play Store URL
+  app:            "https://riyal-web.vercel.app/",   // Riyal web app
 
   linkedinDanah:  "https://www.linkedin.com/in/danah-altamimi-b2912141a",
   linkedinFulwah: "https://www.linkedin.com/in/fulwah-alyahya-7037a9293"
